@@ -13,14 +13,14 @@ import "../components/NavbarComponent.css"
 
 function NavbarComponent() {
   return (
-    <Navbar collapseOnSelect expand="xl" bg="dark" variant="dark" className="navbar-sprout">
+    <Navbar collapseOnSelect expand="xl" variant="dark" className="navbar-sprout">
       <Navbar.Brand href="#home">
         <Image src={Logo}/>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className='ms-auto'>
-          <NavDropdown title="My Requests" >
+          <NavDropdown title="My Requests">
             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">
               Another action
@@ -75,19 +75,21 @@ function NavbarComponent() {
               Separated link
             </NavDropdown.Item>
           </NavDropdown>
-          <Form className='d-flex'>
+          <Form className='search-form d-flex align-items-center'>
             <Form.Control
               type="search"
               placeholder="employee search"
               aria-label="Search"
             />
-            <FontAwesomeIcon icon={faMagnifyingGlass} style={{color: "#70787E"}} />
+            <FontAwesomeIcon icon={faMagnifyingGlass} className='navbar-sprout-icons' style={{color: "#70787E", fontSize: "27px"}} />
           </Form>
           <NavItem>
-            <FontAwesomeIcon icon={faBell} style={{color: "#70787e",}} />
+            <FontAwesomeIcon icon={faBell} className='navbar-sprout-icons' style={{color: "#70787e", fontSize: "25px"}} />
           </NavItem>
-          <Image src={Profile}/>
-          <NavDropdown title="Admin" >
+          <NavItem>
+            <Image src={Profile}/>
+          </NavItem>
+          <NavDropdown title="Admin" className='navbar-admin-item mx-0'>
             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">
               Another action

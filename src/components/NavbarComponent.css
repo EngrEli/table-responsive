@@ -1,12 +1,81 @@
 .navbar-sprout.navbar {
     padding: 18px 24px 20px 30px;
+    background-color: #333333;
 }
 
 .navbar-sprout .form-control {
+    color: #DDDDDD;
     background-color: transparent;
+    /* margin-right: 16px; */
     border-radius: 0;
     border: 0;
     border-bottom: 2px solid #919599;
     width: 145px;
-    padding: 0 22px 9px 11px;
+    padding: 0 9px 9px 11px;
+}
+
+.navbar-sprout .form-control::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%;
+}
+
+.navbar-sprout .nav-item {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.navbar-sprout .form-control:focus {
+    background-color: #333333;
+    color: #DDDDDD;
+    border-color: #FFFFFF;
+    box-shadow: none;
+}
+
+.navbar-sprout .form-control::placeholder {
+    font-size: 14px;
+    color:#898989;
+    line-height: 19.07px;
+}
+
+.nav-link {
+    font-size: 16px;
+    color: #DDDDDD;
+}
+
+.navbar-sprout.navbar-expand-xl .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.search-form {
+    margin-right: 16px;
+}
+
+.navbar-sprout-icons {
+    cursor: pointer;
+}
+
+.navbar-sprout-icons:hover {
+    color: #FFFFFF !important;
+}
+
+.navbar-admin-item .nav-link,
+.navbar-admin-item .nav-link:focus {
+    color:#2FC7E2;
+}
+
+.navbar-admin-item .dropdown-menu[data-bs-popper] {
+    right: 0;
+    left: auto;
+}
+
+.navbar-sprout .dropdown-item.active,
+.navbar-sprout .dropdown-item:active {
+    background-color: #333333;
 }
