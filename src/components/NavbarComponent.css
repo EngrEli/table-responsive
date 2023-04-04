@@ -1,0 +1,12 @@
+.navbar-sprout.navbar {
+    padding: 18px 24px 20px 30px;
+}
+
+.navbar-sprout .form-control {
+    background-color: transparent;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 2px solid #919599;
+    width: 145px;
+    padding: 0 22px 9px 11px;
+}
