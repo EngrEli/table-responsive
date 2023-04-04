@@ -6,11 +6,9 @@
 .navbar-sprout .form-control {
     color: #DDDDDD;
     background-color: transparent;
-    /* margin-right: 16px; */
     border-radius: 0;
     border: 0;
     border-bottom: 2px solid #919599;
-    width: 145px;
     padding: 0 9px 9px 11px;
 }
 
@@ -24,9 +22,6 @@
 }
 
 .navbar-sprout .nav-item {
-    display: flex;
-    align-items: center;
-    margin-right: 16px;
     cursor: pointer;
 }
 
@@ -79,3 +74,15 @@
 .navbar-sprout .dropdown-item:active {
     background-color: #333333;
 }
+
+@media only screen and (min-width: 1200px)  {
+    .navbar-sprout .nav-item {
+        display: flex;
+        align-items: center;
+        margin-right: 16px;
+    }
+
+    .navbar-sprout .form-control {
+        width: 145px;
+    }
+} 
