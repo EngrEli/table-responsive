@@ -7,9 +7,9 @@ import Image from 'react-bootstrap/Image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBell } from '@fortawesome/free-regular-svg-icons';
 import { faMagnifyingGlass,  } from '@fortawesome/free-solid-svg-icons'
-import Logo from "../assets/images/sprout-logo.svg"
-import Profile from "../assets/images/profile-placeholder.svg"
-import "../components/NavbarComponent.css"
+import Logo from "../../assets/images/sprout-logo.svg"
+import Profile from "../../assets/images/profile-placeholder.svg"
+import "./NavbarComponent.css"
 
 function NavbarComponent() {
   return (

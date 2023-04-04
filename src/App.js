@@ -1,4 +1,4 @@
-import Navbar from "./components/NavbarComponent"
+import Navbar from "./components/Navbar/NavbarComponent"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
