@@ -1,0 +1,19 @@
+.btn.btn-success {
+    width: 221px;
+    background-color: #17AD49;
+    border-color: #17AD49;
+    height: 32px;
+    padding: 4px 8px;
+}
+
+.btn-success strong {
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-success .svg-inline--fa {
+    font-size: 16px;
+    margin-right: 8px;
+    color: #FFFFFF;
+}

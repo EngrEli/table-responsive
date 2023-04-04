@@ -6,7 +6,7 @@ import Form from 'react-bootstrap/Form'
 import Image from 'react-bootstrap/Image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBell } from '@fortawesome/free-regular-svg-icons';
-import { faMagnifyingGlass,  } from '@fortawesome/free-solid-svg-icons'
+import { faMagnifyingGlass  } from '@fortawesome/free-solid-svg-icons'
 import Logo from "../../assets/images/sprout-logo.svg"
 import Profile from "../../assets/images/profile-placeholder.svg"
 import "./NavbarComponent.css"
@@ -81,10 +81,10 @@ function NavbarComponent() {
               placeholder="employee search"
               aria-label="Search"
             />
-            <FontAwesomeIcon icon={faMagnifyingGlass} className='navbar-sprout-icons' style={{color: "#70787E", fontSize: "27px"}} />
+            <FontAwesomeIcon icon={faMagnifyingGlass} className='navbar-sprout-icons' style={{ color: "#70787E", fontSize: "27px" }} />
           </Form>
           <NavItem>
-            <FontAwesomeIcon icon={faBell} className='navbar-sprout-icons' style={{color: "#70787e", fontSize: "25px"}} />
+            <FontAwesomeIcon icon={faBell} className='navbar-sprout-icons' style={{ color: "#70787E", fontSize: "25px" }} />
           </NavItem>
           <NavItem>
             <Image src={Profile}/>
