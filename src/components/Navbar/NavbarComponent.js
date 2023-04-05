@@ -83,21 +83,25 @@ function NavbarComponent() {
             />
             <FontAwesomeIcon icon={faMagnifyingGlass} className='navbar-sprout-icons' style={{ color: "#70787E", fontSize: "27px" }} />
           </Form>
-          <NavItem>
+          <NavItem className="d-none d-xl-flex">
             <FontAwesomeIcon icon={faBell} className='navbar-sprout-icons' style={{ color: "#70787E", fontSize: "25px" }} />
           </NavItem>
-          <NavItem>
+          <NavItem className="d-none d-xl-flex">
             <Image src={Profile}/>
           </NavItem>
           <NavDropdown title="Admin" className='navbar-admin-item mx-0'>
-            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">
-              Another action
+            <NavDropdown.Item href="#">
+              Profile
             </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+            <NavDropdown.Item href="#">
+              Settings
+            </NavDropdown.Item>
+            <NavDropdown.Item href="#" className="d-xl-none">
+              Notifications
+            </NavDropdown.Item>
             <NavDropdown.Divider />
             <NavDropdown.Item href="#action/3.4">
-              Separated link
+              Log out
             </NavDropdown.Item>
           </NavDropdown>
         </Nav>

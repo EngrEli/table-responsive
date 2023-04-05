@@ -1,6 +1,7 @@
 .navbar-sprout.navbar {
     padding: 18px 24px 20px 30px;
     background-color: #333333;
+    font-family: 'Rubik-400', sans-serif;
 }
 
 .navbar-sprout .form-control {
@@ -14,8 +15,8 @@
 
 .navbar-sprout .form-control::-webkit-search-cancel-button {
     -webkit-appearance: none;
-    height: 15px;
-    width: 15px;
+    height: 10px;
+    width: 10px;
     border-radius: 50%;
     cursor: pointer;
     background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%;
@@ -46,10 +47,6 @@
 .navbar-sprout.navbar-expand-xl .navbar-nav .nav-link {
     padding-right: 0;
     padding-left: 0;
-}
-
-.search-form {
-    margin-right: 16px;
 }
 
 .navbar-sprout-icons {
@@ -84,5 +81,10 @@
 
     .navbar-sprout .form-control {
         width: 145px;
+    }
+
+    .search-form {
+        margin-right: 16px;
+        gap: 16px;
     }
 } 
