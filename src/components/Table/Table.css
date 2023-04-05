@@ -52,35 +52,115 @@
 .table.table-bordered {
     border: 1px solid #C3CDC9;
     border-radius: 4px;
+    color: #00291B;
+    font-size: 14px;
 }
 
 .table.table-bordered>:not(caption)>*>* {
     border-width: 0;
+    padding-left: 32px;
+    vertical-align: middle;
 }
 
-table.table-bordered th {
+/* React table */
+.react-bootstrap-table tr.header-class th {
+    padding: 16px 16px 16px 32px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #00291B;
+    line-height: 16px;
+}
+
+.react-bootstrap-table tr.header-class th.title-th {
     padding: 16px;
 }
 
-.title-column {
-    max-width: 148px;
+.react-bootstrap-table th:nth-of-type(1),
+.react-bootstrap-table td:nth-of-type(1) {
     width: 148px;
 }
 
-.message-column {
+.react-bootstrap-table td:nth-of-type(1),
+.react-bootstrap-table td:nth-of-type(2) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 0;
+}
+
+.react-bootstrap-table th:nth-of-type(2),
+.react-bootstrap-table td:nth-of-type(2) {
     width: 164px;
 }
 
-.sentby-column {
+.react-bootstrap-table th:nth-of-type(3),
+.react-bootstrap-table td:nth-of-type(3) {
     width: 124px;
 }
 
-.sentthrough-column {
+.react-bootstrap-table th:nth-of-type(4),
+.react-bootstrap-table td:nth-of-type(4) {
     width: 148px;
 }
 
-.created-column,
-.start-column,
-.end-column {
+.react-bootstrap-table th:nth-of-type(5),
+.react-bootstrap-table td:nth-of-type(5),
+.react-bootstrap-table th:nth-of-type(6),
+.react-bootstrap-table td:nth-of-type(6),
+.react-bootstrap-table th:nth-of-type(7),
+.react-bootstrap-table td:nth-of-type(7) {
     width: 140px;
+}
+
+.table.table-bordered .title-td {
+    padding: 12px 7px 12px 16px;
+}
+
+.table.table-bordered .sentby-td p {
+    margin-bottom: 0;
+}
+
+.date1 {
+    font-size: 12px;
+    color: #788E86;
+}
+
+#pageDropDown.dropdown-toggle {
+    border: 1px solid #B4C0BC;
+    background-color: #FEFEFE;
+    color: #2D4F43;
+    font-size: 14px;
+    padding: 0 12px;
+    border-radius: 4px;
+}
+
+#pageDropDown.dropdown-toggle::after {
+    color: #788E86;
+}
+
+.react-bootstrap-table-pagination {
+    position: relative;
+    align-items: center;
+}
+
+.react-bootstrap-table-pagination .dropdown-menu {
+    min-width: 0;
+}
+
+.react-bootstrap-table-pagination .dropdown-item a {
+    color: #2D4F43;
+    text-decoration: none;
+}
+
+.react-bootstrap-table-pagination-total {
+    position: absolute;
+    right: 28px;
+}
+
+.react-bootstrap-table-page-btns-ul {
+    margin-bottom: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -6px;
 }

@@ -1,18 +1,16 @@
-
+import { useState, useEffect } from 'react';
 import Dropdown from 'react-bootstrap/Dropdown'
 import Form from 'react-bootstrap/Form'
 import InputGroup from 'react-bootstrap/InputGroup'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMagnifyingGlass  } from '@fortawesome/free-solid-svg-icons'
+import { faMagnifyingGlass, faCaretLeft, faCaretRight, faForwardStep, faBackwardStep } from '@fortawesome/free-solid-svg-icons'
 import tableIcons from '../../assets/images/sent-through-icons.svg'
 import "./Table.css"
 import BootstrapTable from 'react-bootstrap-table-next'
 import paginationFactory from 'react-bootstrap-table2-paginator'
-
 import axios from "axios"
-import { useState, useEffect } from 'react';
 
 function TableComponent() {
   const [data, setData] = useState([]);
@@ -27,21 +25,41 @@ function TableComponent() {
     .catch((err) => console.log(err));
   }
 
+  const dateFormatter = (cellData) => {
+    const newDateFormat = new Date(cellData).toLocaleTimeString([], {year: 'numeric', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit'});
+    const splitDate = newDateFormat.split(',');
+    const mapped = splitDate.map((item, index) => {
+      return (
+        <div class={"date" + index} key={item}>{item}</div>
+      )
+    })
+    return mapped
+  }
+
   const columns = [
     {
       dataField: "title",
       text: "TITLE",
-      sort: true
+      classes: 'title-td',
+      headerClasses: 'title-th',
     },
     {
       dataField: "message",
       text: "MESSAGE",
-      sort: true
     },
     {
       dataField: "sent_by",
       text: "SENT BY",
-      sort: true
+      classes: 'sentby-td',
+      formatter: (cell) => {
+        // Arrange the full name into surname first format 
+        const fullName = cell.split(' ');
+        [fullName[0], fullName[1]] = [fullName[1], fullName[0]]
+        const joined = fullName.join(', ')
+        return (
+          <p>{joined}</p>
+        );
+      }
     },
     {
       dataField: 'sent_through',
@@ -54,19 +72,22 @@ function TableComponent() {
     {
       dataField: "data_created",
       text: "DATE CREATED",
-      sort: true
     },
     {
       dataField: "start_date",
       text: "START DATE",
-      sort: true
+      formatter: dateFormatter
     },
     {
       dataField: "end_date",
       text: "END DATE",
-      sort: true
+      formatter: dateFormatter
     },
   ]
+
+  const optionsHeader = {
+    headerClasses: 'header-class',
+  };
 
   const customTotal = (from, to, size) => (
     <span className="react-bootstrap-table-pagination-total">
@@ -77,10 +98,8 @@ function TableComponent() {
   const paginateOptions = {
     paginationSize: 3,
     pageStartIndex: 0,
-    alwaysShowAllBtns: true, // Always show next and previous button
-    // withFirstAndLast: false, // Hide the going to First and Last page button
-    // hideSizePerPage: true, // Hide the sizePerPage dropdown always
-    // hidePageListOnlyOnePage: true, // Hide the pagination list when only one page
+    alwaysShowAllBtns: true,
+    hidePageListOnlyOnePage: true,
     firstPageText: 'First',
     prePageText: 'Back',
     nextPageText: 'Next',
@@ -97,8 +116,10 @@ function TableComponent() {
     }, {
       text: '20', value: 20
     }, {
+      text: '30', value: 30
+    }, {
       text: 'All', value: data.length
-    }] // A numeric array is also available. the purpose of above example is custom the text
+    }]
   };
 
   return (
@@ -149,6 +170,7 @@ function TableComponent() {
         keyField='title'
         data={data}
         columns={columns}
+        headerClasses={ optionsHeader.headerClasses }
         pagination={paginationFactory(paginateOptions)}
       />
     </>
