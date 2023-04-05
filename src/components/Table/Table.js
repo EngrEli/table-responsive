@@ -127,11 +127,11 @@ function TableComponent() {
       <Row>
         <Col className='d-flex align-items-center '>
           <div className='table-count all'>
-            <strong className='count-number'>10</strong>
+            <span className='count-number'>10</span>
             All
           </div>
           <div className='table-count drafts'>
-            <strong className='count-number'>10</strong>
+            <span className='count-number'>10</span>
             Drafts
           </div>
         </Col>
@@ -158,7 +158,7 @@ function TableComponent() {
                   placeholder="Search..."
                 />
                 <InputGroup.Text id="inputGroup-sizing-default">
-                  <FontAwesomeIcon icon={faMagnifyingGlass} className='navbar-sprout-icons' style={{ color: "#70787E", fontSize: "16px" }} />
+                  <FontAwesomeIcon icon={faMagnifyingGlass} style={{ color: "#70787E", fontSize: "16px", cursor: "pointer" }} />
                 </InputGroup.Text>
               </InputGroup>
             </Col>
@@ -167,6 +167,8 @@ function TableComponent() {
       </Row>
       <BootstrapTable
         hover
+        responsive
+        wrapperClasses="table-responsive"
         keyField='title'
         data={data}
         columns={columns}
