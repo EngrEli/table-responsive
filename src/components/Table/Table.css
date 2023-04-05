@@ -1,0 +1,86 @@
+.table-filter-dropdown.dropdown {
+    width: 306px;
+}
+
+.table-filter-dropdown .btn {
+    background-color: #FEFEFE;
+    border-color: #B4C0BC;
+    border-radius: 4px;
+    width: 100%;
+    text-align: left;
+}
+
+.table-count {
+    padding: 8px;
+    min-width: 76px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 14px;
+}
+
+.table-count.all {
+    background-color: #E6FFEE;
+    border-radius: 4px;
+    color: #17AD49;
+    font-weight: 500;
+}
+
+.table-count.drafts {
+    color: #00291B;
+    font-weight: 400;
+}
+
+.table-count .count-number {
+    padding: 0 8px;
+    border-radius: 12px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.all .count-number {
+    background-color: #17AD49;
+}
+
+.drafts .count-number {
+    background-color: #FF7F00;
+    margin-right: 8px;
+}
+
+.table.table-bordered {
+    border: 1px solid #C3CDC9;
+    border-radius: 4px;
+}
+
+.table.table-bordered>:not(caption)>*>* {
+    border-width: 0;
+}
+
+table.table-bordered th {
+    padding: 16px;
+}
+
+.title-column {
+    max-width: 148px;
+    width: 148px;
+}
+
+.message-column {
+    width: 164px;
+}
+
+.sentby-column {
+    width: 124px;
+}
+
+.sentthrough-column {
+    width: 148px;
+}
+
+.created-column,
+.start-column,
+.end-column {
+    width: 140px;
+}
