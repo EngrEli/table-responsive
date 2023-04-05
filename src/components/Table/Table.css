@@ -198,6 +198,15 @@
     border-color: #A5B3AF;
 }
 
+.react-bootstrap-table-pagination .disabled>.page-link,
+.react-bootstrap-table-pagination .page-link.disabled {
+    color: #C8CBCD;
+}
+
+.react-bootstrap-table-pagination .page-link:focus {
+    box-shadow: none;
+}
+
 .react-bootstrap-table-pagination .page-link {
     color: #3C5B51;
     border: 0;
