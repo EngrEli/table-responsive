@@ -6,6 +6,14 @@
     text-align: left;
 }
 
+.table-filter-dropdown .dropdown-menu {
+    width: 300px;
+}
+
+.table-filter-dropdown .btn:hover {
+    border-color: #8C8C8C;
+}
+
 .table-count {
     padding: 8px;
     min-width: 76px;

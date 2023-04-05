@@ -5,7 +5,7 @@ import InputGroup from 'react-bootstrap/InputGroup'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMagnifyingGlass, faCaretLeft, faCaretRight, faForwardStep, faBackwardStep } from '@fortawesome/free-solid-svg-icons'
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import tableIcons from '../../assets/images/sent-through-icons.svg'
 import "./Table.css"
 import BootstrapTable from 'react-bootstrap-table-next'
@@ -144,9 +144,13 @@ function TableComponent() {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Dropdown.Item href="#">Menu Item</Dropdown.Item>
-                  <Dropdown.Item href="#">Menu Item</Dropdown.Item>
-                  <Dropdown.Item href="#">Menu Item</Dropdown.Item>
+                  <Dropdown.Item href="#">Title</Dropdown.Item>
+                  <Dropdown.Item href="#">Message</Dropdown.Item>
+                  <Dropdown.Item href="#">Sent By</Dropdown.Item>
+                  <Dropdown.Item href="#">Sent Through</Dropdown.Item>
+                  <Dropdown.Item href="#">Date Created</Dropdown.Item>
+                  <Dropdown.Item href="#">Start Date</Dropdown.Item>
+                  <Dropdown.Item href="#">End Date</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </Col>
