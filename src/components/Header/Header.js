@@ -6,17 +6,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus  } from '@fortawesome/free-solid-svg-icons'
 import "./Header.css"
 
-function Header() {
+function Header({title, subTitle, buttonText}) {
   return (
-  <Row>
+  <Row className='header-container'>
     <Col>
-      <h1>Announcements</h1>
-      <p>View, create, or edit announcements for all employees of your company.</p>
+      <h1>{title}</h1>
+      <p>{subTitle}</p>
     </Col>
     <Col className='d-flex justify-content-end align-items-center'>
       <Button variant="success">
         <FontAwesomeIcon icon={faPlus} style={{color: "#ffffff", fontSize: "16px"}} />
-        <strong>Post an Announcement</strong>
+        <span>{buttonText}</span>
       </Button>
     </Col>
   </Row>

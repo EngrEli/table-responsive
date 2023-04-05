@@ -1,18 +1,39 @@
-.btn.btn-success {
-    width: 221px;
+.header-container {
+    color: #00291B;
+    margin-bottom: 24px;
+}
+
+.header-container h1,
+.header-container span {
+    font-family: 'Rubik-500', sans-serif;
+}
+
+.header-container h1 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 0;
+}
+
+.header-container p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+.header-container .btn {
+    min-width: 221px;
     background-color: #17AD49;
     border-color: #17AD49;
     height: 32px;
     padding: 4px 8px;
 }
 
-.btn-success strong {
+.header-container span {
     line-height: 24px;
     font-size: 16px;
-    font-weight: bold;
 }
 
-.btn-success .svg-inline--fa {
+.header-container .svg-inline--fa {
     font-size: 16px;
     margin-right: 8px;
     color: #FFFFFF;

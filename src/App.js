@@ -10,7 +10,11 @@ function App() {
     <>
       <Navbar />
       <Container className='app-container'>
-        <Header />
+        <Header 
+          title="Announcements"
+          subTitle="View, create, or edit announcements for all employees of your company."
+          buttonText="Post an Announcement"
+        />
         <Table />
       </Container>
     </>

@@ -5,9 +5,22 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Rubik-500';
+    src: url('./assets/fonts/Rubik-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
 .app-container.container {
-    max-width: 1270px;
     margin-top: 48px;
     padding-right: 0;
     padding-left: 0;
+    font-family: 'Rubik-400', sans-serif;
+}
+
+@media only screen and (min-width: 1400px)  {
+    .app-container.container {
+        max-width: 1270px;
+    }
 }
