@@ -1,52 +1,52 @@
 .navbar-sprout.navbar {
-    padding: 18px 24px 20px 30px;
     background-color: #333333;
     font-family: 'Rubik-400', sans-serif;
+    padding: 18px 24px 20px 30px;
 }
 
 .navbar-sprout .form-control {
-    color: #DDDDDD;
     background-color: transparent;
-    border-radius: 0;
     border: 0;
     border-bottom: 2px solid #919599;
+    border-radius: 0;
+    color: #DDDDDD;
     padding: 0 9px 9px 11px;
 }
 
 .navbar-sprout .form-control::-webkit-search-cancel-button {
     -webkit-appearance: none;
-    height: 10px;
-    width: 10px;
+    background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%;
     border-radius: 50%;
     cursor: pointer;
-    background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%;
+    height: 10px;
+    width: 10px;
+}
+
+.navbar-sprout .form-control:focus {
+    background-color: #333333;
+    border-color: #FFFFFF;
+    box-shadow: none;
+    color: #DDDDDD;
+}
+
+.navbar-sprout .form-control::placeholder {
+    color: #898989;
+    font-size: 14px;
+    line-height: 19.07px;
 }
 
 .navbar-sprout .nav-item {
     cursor: pointer;
 }
 
-.navbar-sprout .form-control:focus {
-    background-color: #333333;
-    color: #DDDDDD;
-    border-color: #FFFFFF;
-    box-shadow: none;
-}
-
-.navbar-sprout .form-control::placeholder {
-    font-size: 14px;
-    color:#898989;
-    line-height: 19.07px;
-}
-
 .nav-link {
-    font-size: 16px;
     color: #DDDDDD;
+    font-size: 16px;
 }
 
 .navbar-sprout.navbar-expand-xl .navbar-nav .nav-link {
-    padding-right: 0;
     padding-left: 0;
+    padding-right: 0;
 }
 
 .navbar-sprout-icons {
@@ -59,12 +59,12 @@
 
 .navbar-admin-item .nav-link,
 .navbar-admin-item .nav-link:focus {
-    color:#2FC7E2;
+    color: #2FC7E2;
 }
 
 .navbar-admin-item .dropdown-menu[data-bs-popper] {
-    right: 0;
     left: auto;
+    right: 0;
 }
 
 .navbar-sprout .dropdown-item.active,
@@ -72,10 +72,10 @@
     background-color: #333333;
 }
 
-@media only screen and (min-width: 1200px)  {
+@media only screen and (min-width: 1200px) {
     .navbar-sprout .nav-item {
-        display: flex;
         align-items: center;
+        display: flex;
         margin-right: 16px;
     }
 
@@ -84,7 +84,7 @@
     }
 
     .search-form {
-        margin-right: 16px;
         gap: 16px;
+        margin-right: 16px;
     }
-} 
+}

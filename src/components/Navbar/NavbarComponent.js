@@ -1,15 +1,20 @@
-import Nav from 'react-bootstrap/Nav'
-import Navbar from 'react-bootstrap/Navbar'
-import NavItem from 'react-bootstrap/NavItem'
-import NavDropdown from 'react-bootstrap/NavDropdown'
-import Form from 'react-bootstrap/Form'
-import Image from 'react-bootstrap/Image'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React from 'react';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell } from '@fortawesome/free-regular-svg-icons';
-import { faMagnifyingGlass  } from '@fortawesome/free-solid-svg-icons'
-import Logo from "../../assets/images/sprout-logo.svg"
-import Profile from "../../assets/images/profile-placeholder.svg"
-import "./NavbarComponent.css"
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavItem from 'react-bootstrap/NavItem';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Form from 'react-bootstrap/Form';
+import Image from 'react-bootstrap/Image';
+
+import Logo from '../../assets/images/sprout-logo.svg';
+import Profile from '../../assets/images/profile-placeholder.svg';
+
+import './NavbarComponent.css';
 
 function NavbarComponent() {
   return (

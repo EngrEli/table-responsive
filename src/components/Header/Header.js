@@ -1,8 +1,12 @@
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import { faPlus  } from '@fortawesome/free-solid-svg-icons'
-import "./Header.css"
-import ButtonComponent from '../Button/ButtonComponent'
+import React from 'react';
+
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
+
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+import "./Header.css";
+import ButtonComponent from '../Button/ButtonComponent';
 
 function Header({title, subTitle}) {
   return (
