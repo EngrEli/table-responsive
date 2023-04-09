@@ -30,7 +30,7 @@ function TableComponent() {
     const splitDate = newDateFormat.split(',');
     const mapped = splitDate.map((item, index) => {
       return (
-        <div class={"date" + index} key={item}>{item}</div>
+        <div className={"date" + index} key={item}>{item}</div>
       )
     })
     return mapped
@@ -135,39 +135,31 @@ function TableComponent() {
             Drafts
           </div>
         </Col>
-        <Col>
-          <Row>
-            <Col>
-              <Dropdown className="d-inline table-filter-dropdown">
-                <Dropdown.Toggle variant='' id="dropdown-autoclose-true">
-                  Filter by
-                </Dropdown.Toggle>
+        <Dropdown className="d-inline table-filter-dropdown">
+          <Dropdown.Toggle variant='' id="dropdown-autoclose-true">
+            Filter by
+          </Dropdown.Toggle>
 
-                <Dropdown.Menu>
-                  <Dropdown.Item href="#">Title</Dropdown.Item>
-                  <Dropdown.Item href="#">Message</Dropdown.Item>
-                  <Dropdown.Item href="#">Sent By</Dropdown.Item>
-                  <Dropdown.Item href="#">Sent Through</Dropdown.Item>
-                  <Dropdown.Item href="#">Date Created</Dropdown.Item>
-                  <Dropdown.Item href="#">Start Date</Dropdown.Item>
-                  <Dropdown.Item href="#">End Date</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-            </Col>
-            <Col>
-              <InputGroup className="mb-3 table-filter-search">
-                <Form.Control
-                  aria-label="Default"
-                  aria-describedby="inputGroup-sizing-default"
-                  placeholder="Search..."
-                />
-                <InputGroup.Text id="inputGroup-sizing-default">
-                  <FontAwesomeIcon icon={faMagnifyingGlass} style={{ color: "#70787E", fontSize: "16px", cursor: "pointer" }} />
-                </InputGroup.Text>
-              </InputGroup>
-            </Col>
-          </Row>
-        </Col>
+          <Dropdown.Menu>
+            <Dropdown.Item href="#">Title</Dropdown.Item>
+            <Dropdown.Item href="#">Message</Dropdown.Item>
+            <Dropdown.Item href="#">Sent By</Dropdown.Item>
+            <Dropdown.Item href="#">Sent Through</Dropdown.Item>
+            <Dropdown.Item href="#">Date Created</Dropdown.Item>
+            <Dropdown.Item href="#">Start Date</Dropdown.Item>
+            <Dropdown.Item href="#">End Date</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
+        <InputGroup className="mb-3 table-filter-search">
+          <Form.Control
+            aria-label="Default"
+            aria-describedby="inputGroup-sizing-default"
+            placeholder="Search..."
+          />
+          <InputGroup.Text id="inputGroup-sizing-default">
+            <FontAwesomeIcon icon={faMagnifyingGlass} style={{ color: "#70787E", fontSize: "16px", cursor: "pointer" }} />
+          </InputGroup.Text>
+        </InputGroup>
       </Row>
       <BootstrapTable
         hover

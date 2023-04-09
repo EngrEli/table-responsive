@@ -38,3 +38,15 @@
     margin-right: 8px;
     color: #FFFFFF;
 }
+
+@media only screen and (max-width: 576px)  {
+    .header-container {
+        margin-bottom: 10px;
+    }
+
+    .header-container .btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+}
