@@ -1,0 +1,18 @@
+.header-container .btn {
+    min-width: 221px;
+    background-color: #17AD49;
+    border-color: #17AD49;
+    height: 32px;
+    padding: 4px 8px;
+}
+
+.header-container .svg-inline--fa {
+    font-size: 16px;
+    margin-right: 8px;
+    color: #FFFFFF;
+}
+
+.header-container span {
+    line-height: 24px;
+    font-size: 16px;
+}

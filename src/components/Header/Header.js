@@ -1,12 +1,10 @@
-import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Button from 'react-bootstrap/Button'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus  } from '@fortawesome/free-solid-svg-icons'
 import "./Header.css"
+import ButtonComponent from '../Button/ButtonComponent'
 
-function Header({title, subTitle, buttonText}) {
+function Header({title, subTitle}) {
   return (
   <Row className='header-container'>
     <Col>
@@ -14,10 +12,10 @@ function Header({title, subTitle, buttonText}) {
       <p>{subTitle}</p>
     </Col>
     <Col className='d-flex justify-content-end align-items-center'>
-      <Button variant="success">
-        <FontAwesomeIcon icon={faPlus} style={{color: "#ffffff", fontSize: "16px"}} />
-        <span>{buttonText}</span>
-      </Button>
+      <ButtonComponent 
+        buttonText="Post an Announcement"
+        icon={faPlus}
+      />
     </Col>
   </Row>
   );
