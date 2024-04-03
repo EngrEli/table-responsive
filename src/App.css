@@ -1,39 +1,40 @@
 @font-face {
-    font-family: 'Rubik-400';
-    src: url('./assets/fonts/Rubik-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Rubik-400";
+  src: url("./assets/fonts/Rubik-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Rubik-500';
-    src: url('./assets/fonts/Rubik-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
+  font-family: "Rubik-500";
+  src: url("./assets/fonts/Rubik-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Rubik-700';
-    src: url('./assets/fonts/Rubik-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Rubik-700";
+  src: url("./assets/fonts/Rubik-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
 
 .app-container.container {
-    margin-top: 48px;
-    padding-right: 0;
-    padding-left: 0;
-    font-family: 'Rubik-400', sans-serif;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  padding-right: 0;
+  padding-left: 0;
+  font-family: "Rubik-400", sans-serif;
 }
 
-@media only screen and (min-width: 1400px)  {
-    .app-container.container {
-        max-width: 1270px;
-    }
+@media only screen and (min-width: 1400px) {
+  .app-container.container {
+    max-width: 1270px;
+  }
 }
 
-@media only screen and (max-width: 576px)  {
-    .app-container.container {
-        padding: 25px;
-    }
+@media only screen and (max-width: 576px) {
+  .app-container.container {
+    padding: 25px;
+  }
 }

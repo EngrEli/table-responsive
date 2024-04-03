@@ -1,90 +1,97 @@
 .navbar-sprout.navbar {
-    background-color: #333333;
-    font-family: 'Rubik-400', sans-serif;
-    padding: 18px 24px 20px 30px;
+  background-color: #333333;
+  font-family: "Rubik-400", sans-serif;
+  padding: 18px 24px 20px 30px;
 }
 
 .navbar-sprout .form-control {
-    background-color: transparent;
-    border: 0;
-    border-bottom: 2px solid #919599;
-    border-radius: 0;
-    color: #DDDDDD;
-    padding: 0 9px 9px 11px;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #919599;
+  border-radius: 0;
+  color: #dddddd;
+  padding: 0 9px 9px 11px;
 }
 
 .navbar-sprout .form-control::-webkit-search-cancel-button {
-    -webkit-appearance: none;
-    background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%;
-    border-radius: 50%;
-    cursor: pointer;
-    height: 10px;
-    width: 10px;
+  -webkit-appearance: none;
+  background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg)
+    no-repeat 50% 50%;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
 }
 
 .navbar-sprout .form-control:focus {
-    background-color: #333333;
-    border-color: #FFFFFF;
-    box-shadow: none;
-    color: #DDDDDD;
+  background-color: #333333;
+  border-color: #ffffff;
+  box-shadow: none;
+  color: #dddddd;
 }
 
 .navbar-sprout .form-control::placeholder {
-    color: #898989;
-    font-size: 14px;
-    line-height: 19.07px;
+  color: #898989;
+  font-size: 14px;
+  line-height: 19.07px;
 }
 
 .navbar-sprout .nav-item {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .nav-link {
-    color: #DDDDDD;
-    font-size: 16px;
+  color: #dddddd;
+  font-size: 16px;
 }
 
 .navbar-sprout.navbar-expand-xl .navbar-nav .nav-link {
-    padding-left: 0;
-    padding-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .navbar-sprout-icons {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .navbar-sprout-icons:hover {
-    color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 
 .navbar-admin-item .nav-link,
 .navbar-admin-item .nav-link:focus {
-    color: #2FC7E2;
+  color: #17ad49;
 }
 
 .navbar-admin-item .dropdown-menu[data-bs-popper] {
-    left: auto;
-    right: 0;
+  left: auto;
+  right: 0;
 }
 
 .navbar-sprout .dropdown-item.active,
 .navbar-sprout .dropdown-item:active {
-    background-color: #333333;
+  background-color: #333333;
+}
+
+.navbar-sprout .company-logo {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
 }
 
 @media only screen and (min-width: 1200px) {
-    .navbar-sprout .nav-item {
-        align-items: center;
-        display: flex;
-        margin-right: 16px;
-    }
+  .navbar-sprout .nav-item {
+    align-items: center;
+    display: flex;
+    margin-right: 16px;
+  }
 
-    .navbar-sprout .form-control {
-        width: 145px;
-    }
+  .navbar-sprout .form-control {
+    width: 145px;
+  }
 
-    .search-form {
-        gap: 16px;
-        margin-right: 16px;
-    }
+  .search-form {
+    gap: 16px;
+    margin-right: 16px;
+  }
 }
