@@ -1,7 +1,7 @@
 {
   "name": "sprout-react",
   "version": "0.1.0",
-  "homepage": "https://engreli.github.io/table-responsive",
+  "homepage": "https://EngrEli.github.io/table-responsive",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
